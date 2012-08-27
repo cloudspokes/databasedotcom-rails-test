@@ -1,0 +1,18 @@
+<h1>Editing account</h1>
+
+<%= form_for :account, :url => account_path, :method => :put do |f| %>
+  <div class="field">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :City %><br />
+    <%= f.text_field :City__c %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Show', account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>

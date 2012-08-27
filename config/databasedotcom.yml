@@ -1,0 +1,6 @@
+host: login.salesforce.com
+client_id: YOUR-CLIENT-ID
+client_secret: YOUR-CLIENT-SECRET
+username: YOUR-USERNAME
+password: YOUR-PASSWORD
+debugging: true

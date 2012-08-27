@@ -1,0 +1,17 @@
+<h1>New account</h1>
+
+<%= form_for :account, :url => accounts_path, :method => :post do |f| %>
+  <div class="field">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :City %><br />
+    <%= f.text_field :City__c %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Back', accounts_path %>
